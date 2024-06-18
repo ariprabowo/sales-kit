@@ -50,7 +50,7 @@
       </header>
 
       <section class="h-screen text-white flex items-center justify-center">
-        <div class="video-content space-y-4 text-center -mt-20">  
+        <div class="video-content space-y-4 text-center -mt-40 sm:-mt-0">  
           <h1 class="font-bold text-6xl">AION Y PLUS</h1>
           <p class="text-xl font-medium">Unlimit Your e:xperience</p>
           <button class="bg-cyan-500 hover:bg-blue-400 text-2xl text-white font-light py-2 px-4" @click.prevent="scrollToSection('Kontak')" >Test Drive</button>
