@@ -60,7 +60,7 @@
         </div>
       </section>
       
-      <section class="container px-7 md:px-0 mx-auto -mt-10" id="Produk">
+      <section class="container px-7 mx-auto -mt-10" id="Produk">
         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 text-center sm:text-left">Produk</h1>
         <div class="grid sm:grid-cols-2 md:grid-cols-2 gap-10">
           <div v-for="product in products" :key="product.id">
@@ -69,7 +69,7 @@
         </div>
       </section>
 
-      <section class="container px-7 md:px-0 py-10" id="Keunggulan">
+      <section class="container px-7 py-10" id="Keunggulan">
         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 text-center sm:text-left">Keunggulan</h1>
         <div class="text-light pb-10 hidden">Kami bertujuan untuk membuat terobosan dalam empat aspek berikut dan akan lebih berinvestasi dalam inovasi teknologi.  Kami memberdayakan pengembangan produk melalui pengembangan teknologi dan mempertajam daya saing produk masa depan melalui penguasaan teknologi asli, teknologi kunci dan dasar, serta teknologi inti berdasarkan penelitian teknis.</div>
         <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
@@ -148,10 +148,10 @@
         </div>
       </section>
 
-      <section class="container px-7 md:px-0 pb-10" id="Kontak">
+      <section class="container px-7 pb-10" id="Kontak">
         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 text-center sm:text-left">Kontak</h1>
         <div class="grid sm:grid-cols-1 md:grid-cols-4 md:gap-10">
-            <div class="col-span-3">
+            <div class="lg:col-span-3 sm:col-span-4">
               <form @submit.prevent="submitPost" class="py-6">
                 <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="">
@@ -224,7 +224,7 @@
                 </div>
               </form>
             </div>
-            <div class="rounded-0 bg-[#ffffff] shadow-xl">
+            <div class="rounded-0 bg-[#ffffff] shadow-xl md:w-[250px]">
                 <figure class="flex justify-center items-center rounded-0">
                     <img :src="salesPhoto" alt="Card Preview" class="rounded-t-0">
                 </figure>
