@@ -22,6 +22,7 @@ class Setting extends Model
         'domain',
         'title',
         'meta_description',
-        'photo'
+        'photo',
+        'copyright'
     ];
 }

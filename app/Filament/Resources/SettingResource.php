@@ -41,7 +41,9 @@ class SettingResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('title')
                     ->maxLength(255),
-                Forms\Components\TextArea::make('meta_description')
+                Forms\Components\TextInput::make('meta_description')
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('copyright')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('domain')
                     ->maxLength(255),
