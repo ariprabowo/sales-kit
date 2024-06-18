@@ -30,8 +30,8 @@ export default defineConfig({
       },
       server: {
         https: {
-            key: fs.readFileSync('/etc/letsencrypt/live/aionsales.id/privkey.pe>
-            cert: fs.readFileSync('/etc/letsencrypt/live/aionsales.id/fullchain>
+            key: fs.readFileSync('/etc/letsencrypt/live/aionsales.id/privkey.pem'),
+            cert: fs.readFileSync('/etc/letsencrypt/live/aionsales.id/fullchain.pem'),
         },
         host: 'aionsales.id',
         port: 5173,
