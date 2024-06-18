@@ -12,12 +12,19 @@ class Type extends Model
 
     protected $fillable = [
         'name',
+        'price',
         'product_id',
         'image',
     ];
 
+    protected $appends = ['fullname'];
+
     public function product(): BelongsTo
     {
         return $this->belongsTo(Product::class);
+    }
+
+    public function getFullnameAttribute() {
+        return $this->name.' - IDR '.number_format($this->price);
     }
 }

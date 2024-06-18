@@ -23,12 +23,15 @@ class TypeResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(255),
                 Forms\Components\Select::make('product_id')
                     ->relationship('product', 'name')
                     ->required(),
+                Forms\Components\TextInput::make('name')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('price')
+                    ->required()
+                    ->numeric(),
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->required(),
@@ -39,9 +42,12 @@ class TypeResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('product.name')
+                    ->numeric()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('product.name')
+                Tables\Columns\TextColumn::make('price')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\ImageColumn::make('image'),

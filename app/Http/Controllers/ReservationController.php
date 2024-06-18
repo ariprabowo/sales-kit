@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Type;
+use App\Models\Reservation;
 
-class TypeController extends Controller
+class ReservationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,16 +13,6 @@ class TypeController extends Controller
     public function index()
     {
         //
-    }
-
-    public function getData()
-    {   
-        $types = Type::select('*'); // Fetch all types from the database
-        if (request()->has('product_id')) { 
-            $types->where('product_id', '=', request()->input('product_id'));
-        }
-        $types = $types->get()->all();
-        return response()->json($types, 200); // Return JSON response
     }
 
     /**
@@ -38,7 +28,13 @@ class TypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $input = $request->all();
+            $reservation = Reservation::create($input);
+            return response()->json($reservation, 200); // Created status code
+        } catch (\Throwable $th) {
+            return response()->json(['message' => 'Terjadi kesalahan, lengkapi data.'], 500); // Created status code
+        }
     }
 
     /**

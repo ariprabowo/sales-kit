@@ -33,15 +33,19 @@ class ProductResource extends Resource
                     Forms\Components\TextInput::make('name')
                         ->required()
                         ->maxLength(255),
-                    Forms\Components\MarkdownEditor::make('description')
-                        ->columnSpan('full'),
-                    Forms\Components\FileUpload::make('image_logo')
-                        ->image()
-                        ->label('Logo'),
+                    Forms\Components\TextInput::make('start_price')
+                            ->numeric(),
+                    Forms\Components\Toggle::make('is_cooming_soon')
+                        ->required(),
+                    Forms\Components\MarkdownEditor::make('description'),
                     Forms\Components\FileUpload::make('image')
                         ->image()
                         ->required(),
-                ])->columns(1)
+                    Forms\Components\FileUpload::make('brocure'),
+                    Forms\Components\FileUpload::make('image_logo')
+                        ->image()
+                        ->label('Logo'),
+                ])->columns(2),
         ]);
     }
 
@@ -51,6 +55,9 @@ class ProductResource extends Resource
             ->columns([
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('name')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('start_price')
+                    ->numeric()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('category.name')
                     ->searchable(),

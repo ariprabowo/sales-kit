@@ -17,7 +17,7 @@ class ReservationResource extends Resource
 {
     protected static ?string $model = Reservation::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-clipboard-document-check';
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
     {
@@ -47,6 +47,9 @@ class ReservationResource extends Resource
                 Forms\Components\Select::make('type_id')
                     ->relationship('type', 'name')
                     ->required(),
+                Forms\Components\TextInput::make('type')
+                    ->numeric()
+                    ->default(0),
             ]);
     }
 
@@ -70,6 +73,12 @@ class ReservationResource extends Resource
                 Tables\Columns\TextColumn::make('type.name')
                     ->numeric()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('type')
+                    ->label('Purpose')
+                    ->getStateUsing(function (Reservation $record) {
+                        return $record->type === 0 ? 'Book' : 'Test Drive';
+                    })
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -83,6 +92,7 @@ class ReservationResource extends Resource
                 //
             ])
             ->actions([
+                Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
@@ -104,6 +114,7 @@ class ReservationResource extends Resource
         return [
             'index' => Pages\ListReservations::route('/'),
             'create' => Pages\CreateReservation::route('/create'),
+            'view' => Pages\ViewReservation::route('/{record}'),
             'edit' => Pages\EditReservation::route('/{record}/edit'),
         ];
     }

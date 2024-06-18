@@ -18,6 +18,10 @@ class Setting extends Model
         'sales_email',
         'address_office',
         'link_maps',
-        'hero'
+        'hero',
+        'domain',
+        'title',
+        'meta_description',
+        'photo'
     ];
 }

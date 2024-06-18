@@ -17,7 +17,8 @@ class Reservation extends Model
         'phone',
         'address',
         'product_id',
-        'type_id'
+        'type_id',
+        'type'
     ];
 
     public function product(): BelongsTo

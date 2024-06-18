@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Reservation;
+use App\Models\Product;
 
-class ReservationsController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,6 +13,13 @@ class ReservationsController extends Controller
     public function index()
     {
         //
+    }
+
+    public function getData()
+    {
+        $products = Product::with('category')->get()->all(); // Fetch all types from the database
+        
+        return response()->json($products, 200); // Return JSON response
     }
 
     /**
@@ -28,10 +35,7 @@ class ReservationsController extends Controller
      */
     public function store(Request $request)
     {
-        $input = $request->all();
-        $input['product_id'] = 1;
-        $reservation = Reservation::create($input);
-        return response()->json($reservation, 200); // Created status code
+        //
     }
 
     /**
