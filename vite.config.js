@@ -13,7 +13,7 @@ export default defineConfig({
         cert: fs.readFileSync(process.env.VITE_SSL_CERT)
       },
       proxy: {
-        '/resources': process.env.VITE_DEV_SERVER_URL
+        '/resources': process.env.VITE_SERVER_URL
       }
     },
     plugins: [
