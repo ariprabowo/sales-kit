@@ -52,7 +52,7 @@
       <section class="h-screen text-white flex items-center justify-center">
         <div class="video-content space-y-4 text-center">  
           <h1 class="font-bold text-6xl">AION Y PLUS</h1>
-          <p class="text-xl font-medium">Elegan . Canggih . Aman</p>
+          <p class="text-xl font-medium">Unlimit Your e:xperience</p>
           <button class="bg-cyan-500 hover:bg-blue-400 text-2xl text-white font-light py-2 px-4" @click.prevent="scrollToSection('Kontak')" >Test Drive</button>
         </div>
         <div class="video-container absolute top-0 left-0 w-full h-full overflow-hidden -z-10">  
@@ -206,23 +206,23 @@
                 </figure>
                 <div class="flex flex-col p-8 space-y-3">
                     <div class="text-2xl font-bold text-[#374151]">Amin Prayoga</div>
-                    <div class="font-light text-gray-500 pb-6">Sales Executive</div>
+                    <div class="font-light text-gray-500 pb-6">Sales Consultant</div>
                     <div class="flex">
                       <img :src="iconEmail" class="w-[25px] me-2"/>
                       <div class="text-md">
-                          aminprayoga77@gmail.com
+                          aionsales.id@gmail.com
                       </div>
                     </div>
                     <div class="flex">
                       <img :src="iconIg" class="w-[28px] me-2"/>
                       <div class="text-md">
-                          <a href="#" class="hover:text-cyan-500">aionsales</a>
+                          <a href="https://www.instagram.com/aionsales.id/" class="hover:text-cyan-500">@aionsales.id</a>
                       </div>
                     </div>
                     <div class="flex">
                       <img :src="iconPhone" class="w-[25px] me-2"/>
                       <div class="text-md">
-                          <a href="#" class="hover:text-cyan-500">+6264245353</a>
+                          <a href="https://wa.me/6289512591564" class="hover:text-cyan-500">+6264245353</a>
                       </div>
                     </div>
                 </div>
