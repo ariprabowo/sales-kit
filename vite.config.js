@@ -4,9 +4,18 @@ import laravel from 'laravel-vite-plugin';
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue'
 import tailwindcss from 'tailwindcss'
-
+import dotenv from 'dotenv';
 
 export default defineConfig({
+    server: {
+      https: {
+        key: fs.readFileSync(process.env.VITE_SSL_KEY),
+        cert: fs.readFileSync(process.env.VITE_SSL_CERT)
+      },
+      proxy: {
+        '/resources': process.env.VITE_DEV_SERVER_URL
+      }
+    },
     plugins: [
 
         vue(),
