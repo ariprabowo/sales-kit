@@ -61,7 +61,7 @@
       </section>
       
       <section class="container mx-auto -mt-10" id="Produk">
-        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8">Produk</h1>
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 sm:text-center md:text-start">Produk</h1>
         <div class="grid sm:grid-cols-2 md:grid-cols-2 gap-10">
           <div v-for="product in products" :key="product.id">
             <product-card :product="product" />
@@ -70,7 +70,7 @@
       </section>
 
       <section class="container py-10" id="Keunggulan">
-        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8">Keunggulan</h1>
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 sm:text-center md:text-start">Keunggulan</h1>
         <div class="text-light pb-10 hidden">Kami bertujuan untuk membuat terobosan dalam empat aspek berikut dan akan lebih berinvestasi dalam inovasi teknologi.  Kami memberdayakan pengembangan produk melalui pengembangan teknologi dan mempertajam daya saing produk masa depan melalui penguasaan teknologi asli, teknologi kunci dan dasar, serta teknologi inti berdasarkan penelitian teknis.</div>
         <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
           <article class="flex flex-col items-start justify-between">
@@ -148,8 +148,8 @@
         </div>
       </section>
 
-      <section class="container py-10" id="Kontak">
-        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8">Kontak</h1>
+      <section class="container pb-10" id="Kontak">
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 sm:text-center md:text-start">Kontak</h1>
         <div class="grid sm:grid-cols-1 md:grid-cols-4 md:gap-10">
             <div class="col-span-3">
               <form @submit.prevent="submitPost" class="py-6">
