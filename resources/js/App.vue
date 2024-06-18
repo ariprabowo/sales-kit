@@ -71,54 +71,78 @@
 
       <section class="container py-10" id="Keunggulan">
         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8">Keunggulan</h1>
-        <div class="text-light pb-10">Di GAC R&D CENTER, kami bertujuan untuk membuat terobosan dalam empat aspek berikut dan akan lebih berinvestasi dalam inovasi teknologi.  Kami memberdayakan pengembangan produk melalui pengembangan teknologi dan mempertajam daya saing produk masa depan melalui penguasaan teknologi asli, teknologi kunci dan dasar, serta teknologi inti berdasarkan penelitian teknis.</div>
-        <div class="grid grid-cols-2 gap-10">
+        <div class="text-light pb-10 hidden">Kami bertujuan untuk membuat terobosan dalam empat aspek berikut dan akan lebih berinvestasi dalam inovasi teknologi.  Kami memberdayakan pengembangan produk melalui pengembangan teknologi dan mempertajam daya saing produk masa depan melalui penguasaan teknologi asli, teknologi kunci dan dasar, serta teknologi inti berdasarkan penelitian teknis.</div>
+        <div class="grid grid-cols-3 gap-10">
           <article class="flex flex-col items-start justify-between">
             <div class="group relative">
               <img :src="ringkasan1Url"/>
-              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 hidden">
                 <a href="#">
                   <span class="absolute inset-0"></span>
                   Menyatu dengan Era Internet
                 </a>
               </h3>
-              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600">Kami memasuki era internet dan mengidentifikasi kebutuhan pelanggan secara akurat dengan membangun proses pengembangan berwawasan ke depan berdasarkan analisis kebutuhan pengguna dalam berbagai skenario. Selain itu, kami menekankan estetika dan keahlian dalam produk kami, dan terus berupaya meningkatkan pengalaman pengguna melalui desain yang menampilkan interaksi mendalam.</p>
+              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600 hidden">Kami memasuki era internet dan mengidentifikasi kebutuhan pelanggan secara akurat dengan membangun proses pengembangan berwawasan ke depan berdasarkan analisis kebutuhan pengguna dalam berbagai skenario. Selain itu, kami menekankan estetika dan keahlian dalam produk kami, dan terus berupaya meningkatkan pengalaman pengguna melalui desain yang menampilkan interaksi mendalam.</p>
             </div>
           </article>
           <article class="flex flex-col items-start justify-between">
             <div class="group relative">
               <img :src="ringkasan2Url"/>
-              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 hidden">
                 <a href="#">
                   <span class="absolute inset-0"></span>
                   Menuju Elektrifikasi (Menuju Masa Depan Rendah Karbon)
                 </a>
               </h3>
-              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600">Dengan berfokus pada teknologi inti kendaraan listrik: baterai, motor, dan kontrol elektronik, kami bertujuan untuk membuat terobosan utama dalam baterai daya, kopling elektromekanis, penggerak listrik terintegrasi, pengontrol domain, manajemen panas yang efisien, pengisian daya tinggi, dan teknologi lainnya. Selain itu, kami juga harus merambah pengembangan teknologi integrasi kendaraan fuel cell, menjadi pelopor dalam industri otomotif yang sedang berkembang, dan memungkinkan merek mandiri untuk mendapatkan keunggulan kompetitif dengan mengadopsi teknologi ICV. Selain itu, penelitian dasar yang relevan tentang netralitas karbon akan dilakukan untuk mengurangi jejak karbon.</p>
+              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600 hidden">Dengan berfokus pada teknologi inti kendaraan listrik: baterai, motor, dan kontrol elektronik, kami bertujuan untuk membuat terobosan utama dalam baterai daya, kopling elektromekanis, penggerak listrik terintegrasi, pengontrol domain, manajemen panas yang efisien, pengisian daya tinggi, dan teknologi lainnya. Selain itu, kami juga harus merambah pengembangan teknologi integrasi kendaraan fuel cell, menjadi pelopor dalam industri otomotif yang sedang berkembang, dan memungkinkan merek mandiri untuk mendapatkan keunggulan kompetitif dengan mengadopsi teknologi ICV. Selain itu, penelitian dasar yang relevan tentang netralitas karbon akan dilakukan untuk mengurangi jejak karbon.</p>
             </div>
           </article>
           <article class="flex flex-col items-start justify-between">
             <div class="group relative">
               <img :src="ringkasan3Url"/>
-              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 hidden">
                 <a href="#">
                   <span class="absolute inset-0"></span>
                   Menuju Kecerdasan
                 </a>
               </h3>
-              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600">Dengan membuat terobosan dalam intelligent driving (mengemudi cerdas), interaksi berbasis skenario, dan teknologi analisis dan aplikasi big data berdasarkan arsitektur listrik/elektronik, kami bertujuan untuk menciptakan ekosistem ICV GAC, dan menjadi pemimpin industri dalam pengembangan teknologi ICV.</p>
+              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600 hidden">Dengan membuat terobosan dalam intelligent driving (mengemudi cerdas), interaksi berbasis skenario, dan teknologi analisis dan aplikasi big data berdasarkan arsitektur listrik/elektronik, kami bertujuan untuk menciptakan ekosistem ICV GAC, dan menjadi pemimpin industri dalam pengembangan teknologi ICV.</p>
             </div>
           </article>
           <article class="flex flex-col items-start justify-between">
             <div class="group relative">
               <img :src="ringkasan4Url"/>
-              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 hidden">
                 <a href="#">
                   <span class="absolute inset-0"></span>
                   Menuju Digital
                 </a>
               </h3>
-              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600">Dengan mengadopsi teknologi cloud computing, big data, simulasi virtual, dan teknologi lainnya, kami mampu mendorong digitalisasi pengembangan produk dan bisnis R&D secara menyeluruh, untuk menyediakan produk dan layanan cerdas kepada pengguna yang bersifat digital dan memberikan pengalaman superior.</p>
+              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600 hidden">Dengan mengadopsi teknologi cloud computing, big data, simulasi virtual, dan teknologi lainnya, kami mampu mendorong digitalisasi pengembangan produk dan bisnis R&D secara menyeluruh, untuk menyediakan produk dan layanan cerdas kepada pengguna yang bersifat digital dan memberikan pengalaman superior.</p>
+            </div>
+          </article>
+          <article class="flex flex-col items-start justify-between">
+            <div class="group relative">
+              <img :src="ringkasan5Url"/>
+              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 hidden">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Menuju Digital
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600 hidden">Dengan mengadopsi teknologi cloud computing, big data, simulasi virtual, dan teknologi lainnya, kami mampu mendorong digitalisasi pengembangan produk dan bisnis R&D secara menyeluruh, untuk menyediakan produk dan layanan cerdas kepada pengguna yang bersifat digital dan memberikan pengalaman superior.</p>
+            </div>
+          </article>
+          <article class="flex flex-col items-start justify-between">
+            <div class="group relative">
+              <img :src="ringkasan6Url"/>
+              <h3 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 hidden">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Menuju Digital
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-10 text-sm leading-6 text-gray-600 hidden">Dengan mengadopsi teknologi cloud computing, big data, simulasi virtual, dan teknologi lainnya, kami mampu mendorong digitalisasi pengembangan produk dan bisnis R&D secara menyeluruh, untuk menyediakan produk dan layanan cerdas kepada pengguna yang bersifat digital dan memberikan pengalaman superior.</p>
             </div>
           </article>
         </div>
@@ -216,13 +240,13 @@
                     <div class="flex">
                       <img :src="iconIg" class="w-[28px] me-2"/>
                       <div class="text-md">
-                          <a href="https://www.instagram.com/aionsales.id/" class="hover:text-cyan-500">@aionsales.id</a>
+                          <a href="https://www.instagram.com/aionsales.id/" target="_blank" class="hover:text-cyan-500">@aionsales.id</a>
                       </div>
                     </div>
                     <div class="flex">
                       <img :src="iconPhone" class="w-[25px] me-2"/>
                       <div class="text-md">
-                          <a href="https://wa.me/6289512591564" class="hover:text-cyan-500">+6264245353</a>
+                          <a href="https://wa.me/6289512591564" target="_blank" class="hover:text-cyan-500">+6289512591564</a>
                       </div>
                     </div>
                 </div>
@@ -263,15 +287,17 @@
   const fitur3Url = ref('/assets/images/car-label-pic3.jpg'); 
   const fitur4Url = ref('/assets/images/car-label-pic4.jpg'); 
 
-  const ringkasan1Url = ref('/assets/images/technological-innovation-pic1.jpg'); 
-  const ringkasan2Url = ref('/assets/images/technological-innovation-pic2.jpg'); 
-  const ringkasan3Url = ref('/assets/images/technological-innovation-pic3.jpg'); 
-  const ringkasan4Url = ref('/assets/images/technological-innovation-pic4.jpg'); 
+  const ringkasan1Url = ref('/assets/adv/img1.jpg'); 
+  const ringkasan2Url = ref('/assets/adv/img2.jpg'); 
+  const ringkasan3Url = ref('/assets/adv/img3.jpg'); 
+  const ringkasan4Url = ref('/assets/adv/img4.jpg'); 
+  const ringkasan5Url = ref('/assets/adv/img5.jpg'); 
+  const ringkasan6Url = ref('/assets/adv/img6.jpg');
 
   const iconEmail = ref('/assets/images/email.svg'); 
   const iconIg = ref('/assets/images/ig.svg'); 
   const iconPhone = ref('/assets/images/phone.svg'); 
-  const salesPhoto = ref('/assets/images/sales.jpg'); 
+  const salesPhoto = ref('/assets/images/sales.jpeg'); 
 
   const videoUrl = ref('/assets/images/overview-aiony.mp4'); 
 
