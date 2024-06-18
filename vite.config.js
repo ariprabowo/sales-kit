@@ -7,6 +7,8 @@ import tailwindcss from 'tailwindcss'
 import fs from 'fs';
 import dotenv from 'dotenv';
 
+dotenv.config();
+
 export default defineConfig({
     server: {
       https: {
