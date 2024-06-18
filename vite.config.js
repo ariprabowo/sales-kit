@@ -16,8 +16,13 @@ export default defineConfig({
         cert: fs.readFileSync(process.env.VITE_SSL_CERT)
       },
       proxy: {
-        '/resources': process.env.VITE_SERVER_URL
-      }
+        // Match requests starting with '/resources/' (adjust as needed)
+        '/resources/': {
+          target: 'https://aionsales.id:5173', // Target URL
+          changeOrigin: true, // Optional: Change origin to match development server
+          secure: false, // Optional: Disable if target doesn't use HTTPS
+        },
+      },
     },
     plugins: [
 
