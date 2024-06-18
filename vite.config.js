@@ -2,8 +2,9 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import { resolve } from 'path';
-import vue from '@vitejs/plugin-vue'
-import tailwindcss from 'tailwindcss'
+import vue from '@vitejs/plugin-vue';
+import tailwindcss from 'tailwindcss';
+import fs from 'fs';
 
 export default defineConfig({
     plugins: [
@@ -27,4 +28,12 @@ export default defineConfig({
           '@': resolve(__dirname, 'resources'),
         },
       },
+      server: {
+        https: {
+            key: fs.readFileSync('/etc/letsencrypt/live/aionsales.id/privkey.pe>
+            cert: fs.readFileSync('/etc/letsencrypt/live/aionsales.id/fullchain>
+        },
+        host: 'aionsales.id',
+        port: 5173,
+    },
 });
