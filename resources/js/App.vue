@@ -229,7 +229,7 @@
                     <img :src="salesPhoto" alt="Card Preview" class="rounded-t-0">
                 </figure>
                 <div class="flex flex-col p-8 space-y-3">
-                    <div class="text-2xl font-bold text-[#374151]">Amin Prayoga</div>
+                    <div class="text-2xl font-bold text-[#374151]">Yoga</div>
                     <div class="font-light text-gray-500 pb-6">Sales Consultant</div>
                     <div class="flex">
                       <img :src="iconEmail" class="w-[25px] me-2"/>
