@@ -33,8 +33,7 @@ class TypeResource extends Resource
                     ->required()
                     ->numeric(),
                 Forms\Components\FileUpload::make('image')
-                    ->image()
-                    ->required(),
+                    ->image(),
             ]);
     }
 
@@ -65,6 +64,7 @@ class TypeResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
