@@ -19,7 +19,7 @@
       </template>
       <template v-if="!product.is_cooming_soon">
         <div class="absolute bottom-0 right-0 p-7">
-          <a :src="product.brocure_url" download="" class="bg-cyan-500 hover:bg-blue-400 text-md text-white font-md py-2 px-4">Brosur</a>
+          <a :href="product.brocure_url" download="" class="bg-cyan-500 hover:bg-blue-400 text-md text-white font-md py-2 px-4">Brosur</a>
         </div>
       </template>
     </div>
