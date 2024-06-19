@@ -1,5 +1,5 @@
 <template>
-    <div class="relative shadow-md bg-cover min-h-[350px]" :style="{ backgroundImage: `url(${product.image_url})` }">
+    <div class="relative shadow-md bg-cover bg-center min-h-[350px]" :style="{ backgroundImage: `url(${product.image_url})` }">
       <div class="p-4 hidden">
         <div class="font-bold text-3xl text-gray-800">{{ product.name }}</div>
       </div>      

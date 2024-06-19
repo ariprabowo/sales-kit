@@ -224,7 +224,7 @@
                 </div>
               </form>
             </div>
-            <div class="rounded-0 bg-[#ffffff] shadow-xl md:w-[250px]">
+            <div class="rounded-0 bg-[#ffffff] shadow-xl md:w-[250px] lg:w-full">
                 <figure class="flex justify-center items-center rounded-0">
                     <img :src="salesPhoto" alt="Card Preview" class="rounded-t-0">
                 </figure>
@@ -279,13 +279,7 @@
   const mobileMenuOpen = ref(false)
 
   const logoWhiteUrl = ref('/assets/images/logo_white.svg'); 
-  const logoBlackUrl = ref('/assets/images/logo.svg'); 
-  const heroUrl = ref('/assets/images/hero.png'); 
-
-  const fitur1Url = ref('/assets/images/car-label-pic1.jpg'); 
-  const fitur2Url = ref('/assets/images/car-label-pic2.jpg'); 
-  const fitur3Url = ref('/assets/images/car-label-pic3.jpg'); 
-  const fitur4Url = ref('/assets/images/car-label-pic4.jpg'); 
+  const logoBlackUrl = ref('/assets/images/logo.svg');
 
   const ringkasan1Url = ref('/assets/adv/img1.jpg'); 
   const ringkasan2Url = ref('/assets/adv/img2.jpg'); 
