@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>AION</title>
+        <meta name="title" content="{{isset($data) ? $data->title : 'Aion'}}">
+        <meta name="description" content="{{isset($data) ? $data->meta_description : 'Aion Indonesia'}}">
+        <meta name="keywords" content="{{isset($data) ? $data->meta_keywords : 'Aion'}}">
+        <title>{{isset($data) ? $data->title : 'AION'}}"</title>
         <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/logo_white.svg')}}">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
@@ -13,7 +16,6 @@
             }
         </style>
         @vite('resources/css/app.css')
-            
     </head>
     <body>
         <div id="app"></div>
