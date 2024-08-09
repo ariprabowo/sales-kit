@@ -23,6 +23,7 @@ class Setting extends Model
         'title',
         'meta_description',
         'photo',
-        'copyright'
+        'copyright',
+        'meta_keywords',
     ];
 }
