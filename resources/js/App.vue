@@ -279,7 +279,7 @@
       </section>
     
       <footer class="relative bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex justify-center items-center">
-        <p>AIONSALES &copy; 2024 . All Rights Reserved.</p>
+        <p>AIONINDOMOBIL &copy; 2024 . All Rights Reserved.</p>
       </footer>
 
       <a href="https://wa.me/6289512591564" target="_blank" class="fixed bottom-10 right-10 w-16 h-16 rounded-full bg-green-500 text-white flex justify-center items-center shadow-md hover:shadow-lg">
