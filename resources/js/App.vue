@@ -253,24 +253,24 @@
                     <img :src="salesPhoto" alt="Card Preview" class="rounded-t-0">
                 </figure>
                 <div class="flex flex-col p-8 space-y-3">
-                    <div class="text-2xl font-bold text-[#374151]">Yoga</div>
+                    <div class="text-2xl font-bold text-[#374151]">Reynold Indomobil</div>
                     <div class="font-light text-gray-500 pb-6">Sales Consultant</div>
                     <div class="flex">
                       <img :src="iconEmail" class="w-[25px] me-2"/>
-                      <div class="text-md">
-                          aionsales.id@gmail.com
+                      <div class="text-sm">
+                        reynold28indomobil@gmail.com
                       </div>
                     </div>
                     <div class="flex">
                       <img :src="iconIg" class="w-[28px] me-2"/>
                       <div class="text-md">
-                          <a href="https://www.instagram.com/aionsales.id/" target="_blank" class="hover:text-cyan-500">@aionsales.id</a>
+                          <a href="https://www.instagram.com/aion_indomobil.id/?hl=en" target="_blank" class="hover:text-cyan-500">@aion_indomobil.id</a>
                       </div>
                     </div>
                     <div class="flex">
                       <img :src="iconPhone" class="w-[25px] me-2"/>
                       <div class="text-md">
-                          <a href="https://wa.me/6289512591564" target="_blank" class="hover:text-cyan-500">+6289512591564</a>
+                          <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FOAFM6LL5JZIVF1&e=AT0Y3mtxFV9qkAFTQhoR-u_DqeARFBpwbGywdxCCz5cidR4YlRQPKSY3ire2keyl91zueU-YVsJXQHXiiSnpbpiDQX9pS_RvjkLh9g" target="_blank" class="hover:text-cyan-500">+6281290753585</a>
                       </div>
                     </div>
                 </div>
@@ -317,7 +317,7 @@
   const iconEmail = ref('/assets/images/email.svg'); 
   const iconIg = ref('/assets/images/ig.svg'); 
   const iconPhone = ref('/assets/images/phone.svg'); 
-  const salesPhoto = ref('/assets/images/sales.jpeg'); 
+  const salesPhoto = ref('/assets/images/sales_aionindomobil.jpeg'); 
 
   const videoUrl = ref('/assets/images/overview-aiony.mp4'); 
 
