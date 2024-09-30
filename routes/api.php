@@ -19,7 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::group(['prefix'=>'product'], function(){
-    Route::get('/getData', ['as' => 'type.getData', 'uses' => 'App\Http\Controllers\ProductController@getData']);
+    Route::get('/getData', ['as' => 'product.getData', 'uses' => 'App\Http\Controllers\ProductController@getData']);
 });
 
 Route::group(['prefix'=>'type'], function(){
@@ -32,4 +32,12 @@ Route::group(['prefix'=>'reservation'], function(){
 
 Route::group(['prefix'=>'setting'], function(){
     Route::get('/getData', ['as' => 'setting.getData', 'uses' => 'App\Http\Controllers\SettingController@getData']);
+});
+
+Route::group(['prefix'=>'testimoni'], function(){
+    Route::get('/getData', ['as' => 'testimoni.getData', 'uses' => 'App\Http\Controllers\TestimoniController@getData']);
+});
+
+Route::group(['prefix'=>'gallery'], function(){
+    Route::get('/getData', ['as' => 'gallery.getData', 'uses' => 'App\Http\Controllers\GalleryController@getData']);
 });

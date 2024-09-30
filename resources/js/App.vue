@@ -69,7 +69,18 @@
         </div>
       </section>
 
-      <section class="container px-7 py-10" id="Keunggulan">
+      <section class="container px-7 mx-auto" id="Testimoni">
+        <div v-if="testimonies.length > 0" class="mt-10">
+          <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 text-center sm:text-left">Testimoni</h1>
+          <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
+            <div v-for="testimoni in testimonies" :key="testimoni.id">
+              <testimoni-card :testimoni="testimoni" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container px-7 mt-10" id="Keunggulan">
         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 text-center sm:text-left">Keunggulan</h1>
         <div class="text-light pb-10 hidden">Kami bertujuan untuk membuat terobosan dalam empat aspek berikut dan akan lebih berinvestasi dalam inovasi teknologi.  Kami memberdayakan pengembangan produk melalui pengembangan teknologi dan mempertajam daya saing produk masa depan melalui penguasaan teknologi asli, teknologi kunci dan dasar, serta teknologi inti berdasarkan penelitian teknis.</div>
         <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
@@ -148,7 +159,20 @@
         </div>
       </section>
 
-      <section class="container px-7 pb-10" id="Kontak">
+      
+      <section class="container px-7 mx-auto" id="Galeri">
+        <div v-if="galleries.length > 0">
+          <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 text-center sm:text-left">Galeri</h1>
+          <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
+            <div v-for="gallery in galleries" :key="gallery.id">
+              <gallery-card :gallery="gallery" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="container px-7 pb-10 mt-10" id="Kontak">
         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-8 text-center sm:text-left">Kontak</h1>
         <div class="grid sm:grid-cols-1 md:grid-cols-4 md:gap-10">
             <div class="lg:col-span-3 sm:col-span-4">
@@ -273,6 +297,8 @@
   const navigation = [
     { name: 'Produk', href: '#' },
     { name: 'Keunggulan', href: '#' },
+    { name: 'Testimoni', href: '#' },
+    { name: 'Galeri', href: '#' },
     { name: 'Kontak', href: '#' },
   ]
   
@@ -300,10 +326,14 @@
     import throttle from 'lodash/throttle'; // Assuming Lodash is installed
     import axios from 'axios';
     import ProductCard from './product-card.vue';
+    import TestimoniCard from './testimoni-card.vue';
+    import GalleryCard from './gallery-card.vue';
     
     export default {
       components: {
         ProductCard,
+        TestimoniCard,
+        GalleryCard,
       },
       data() {
         return {
@@ -319,6 +349,8 @@
           selectedType: '',
           productTypes: [],
           isScrolled: false,
+          testimonies: [],
+          galleries: [],
         };
       },
       mounted() {
@@ -326,6 +358,8 @@
       },
       created() {
         this.fetchProducts();
+        this.fetchTestimonies();
+        this.fetchGalleries();
       },
       methods: {
           onProductChange() {
@@ -386,6 +420,24 @@
               this.products = response.data;
             } catch (error) {
               console.error('Error fetching products:', error);
+              // Handle errors appropriately, e.g., display an error message to the user
+            }
+          },
+          async fetchTestimonies() {
+            try {
+              const response = await axios.get('/api/testimoni/getData');
+              this.testimonies = response.data;
+            } catch (error) {
+              console.error('Error fetching testimonies:', error);
+              // Handle errors appropriately, e.g., display an error message to the user
+            }
+          },
+          async fetchGalleries() {
+            try {
+              const response = await axios.get('/api/gallery/getData');
+              this.galleries = response.data;
+            } catch (error) {
+              console.error('Error fetching galleries:', error);
               // Handle errors appropriately, e.g., display an error message to the user
             }
           },
